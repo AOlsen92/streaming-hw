@@ -7,7 +7,7 @@ def data_stream():
         for line in f:
             for w in word_tokenize(line):
                 if w.isalnum():
-                    yield w, pos
+                    yield w
    
 def bloom_filter_set():
     """Stream the data in 'Proper.txt' """
@@ -15,7 +15,7 @@ def bloom_filter_set():
         for line in f:
             yield line.strip()
 
-
+print(w)
 
 ############### DO NOT MODIFY ABOVE THIS LINE #################
 
@@ -24,10 +24,21 @@ def bloom_filter_set():
 # family should be able to hash a word from the data stream to a number in the
 # appropriate range needed.
 
+# family of hash functions from h(p,m,k) = ((ax+b) mod p) mod m
+# k = 
+# m =-2nln(p)
+#
+#
+
 def uhf(rng):
     """Returns a hash function that can map a word to a number in the range
     0 - rng
     """
+
+
+    
+    
+    
     pass
 
 ############### 
