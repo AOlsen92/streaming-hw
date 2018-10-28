@@ -16,6 +16,11 @@ def bloom_filter_set():
         for line in f:
             yield line.strip()
 
+<<<<<<< HEAD
+=======
+print(w)
+
+>>>>>>> 42604289e7f9530dd8a9e3a2f48ee644016228ea
 ############### DO NOT MODIFY ABOVE THIS LINE #################
 
 
@@ -23,6 +28,7 @@ def bloom_filter_set():
 # Implement a universal hash family of functions below: each function from the
 # family should be able to hash a word from the data stream to a number in the
 # appropriate range needed.
+<<<<<<< HEAD
 yes = []
 padding = '!'
 for x in data_stream():
@@ -58,6 +64,24 @@ def uhf(p,m):
     return lambda x: ((a * x + b)% p)% m
     
 # Returns a hash function that can map a word to a number in the range 0 - rng    
+=======
+
+# family of hash functions from h(p,m,k) = ((ax+b) mod p) mod m
+# k = 
+# m =-2nln(p)
+#
+#
+
+def uhf(rng):
+    """Returns a hash function that can map a word to a number in the range
+    0 - rng
+    """
+
+
+    
+    
+    
+>>>>>>> 42604289e7f9530dd8a9e3a2f48ee644016228ea
     pass
 
 size = 2**18
